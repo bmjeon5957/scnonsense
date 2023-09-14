@@ -1,0 +1,28 @@
+{
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "map_data",
+            "depth": 5,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "",
+            "depth": 5,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "triggers",
+            "depth": 5,
+            "includeAllSymbols": true
+        }
+    ],
+    "python.linting.flake8Args": [
+        "--max-line-length=88",
+        "--ignore=E402,F841,F401,E302,E305",
+    ],
+}

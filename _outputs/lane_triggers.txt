@@ -1,0 +1,396 @@
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Anshan");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Anshan",Attack,"Sinuiju");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Sinuiju");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Sinuiju",Attack,"Pyongyang");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Pyongyang");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Pyongyang",Attack,"Haeju");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Haeju");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Haeju",Attack,"Seoul West");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Seoul West");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Seoul West",Attack,"Ahsan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Ahsan");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Ahsan",Attack,"Gwangju");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Gwangju");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Gwangju",Attack,"Changwon");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Changwon");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Changwon",Attack,"Busan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Junggangjin");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Junggangjin",Attack,"Ganggye");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Ganggye");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Ganggye",Attack,"Gaecheon");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Gaecheon");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Gaecheon",Attack,"Gaesung");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Gaesung");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Gaesung",Attack,"Dongducheon");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Dongducheon");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Dongducheon",Attack,"Seoul East");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Seoul East");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Seoul East",Attack,"Jinahn");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Jinahn");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Jinahn",Attack,"Busan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Busan");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Busan",Attack,"Between Busan Ulsan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Jilin");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Jilin",Attack,"Gaema");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Gaema");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Gaema",Attack,"Hamhung");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Hamhung");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Hamhung",Attack,"Gaesung top");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Gaesung top");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Gaesung top",Attack,"Wonju");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Wonju");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Wonju",Attack,"Daegu");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Daegu");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Daegu",Attack,"Between Busan Ulsan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Cheongjin");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Cheongjin",Attack,"Haesan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Haesan");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Haesan",Attack,"Sinpo");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Sinpo");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Sinpo",Attack,"Wonsan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Wonsan");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Wonsan",Attack,"Gangwon");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Gangwon");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Gangwon",Attack,"Gyeongju");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Gyeongju");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Gyeongju",Attack,"Ulsan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Ulsan");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Ulsan",Attack,"Between Busan Ulsan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Shenyang");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Shenyang",Attack,"Xihu");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Xihu");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Xihu",Attack,"Ganggye");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Chaoyang");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Chaoyang",Attack,"Anshan");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(Force2,AtLeast,12,"Men","Dalian");
+		Deaths(P5,Exactly,0,"Start Location");
+	},
+	actions = {
+		Order("Men",Force2,"Dalian",Attack,"Sinuiju");
+		PreserveTrigger();
+		Comment("[Comment] Computer Lane Order Control");
+	}
+}

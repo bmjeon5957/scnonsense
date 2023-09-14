@@ -1,0 +1,568 @@
+Trigger {
+	players = {P5},
+	conditions = {
+		CountdownTimer(Exactly,0);
+	},
+	actions = {
+		SetCountdownTimer(SetTo,40);
+		PreserveTrigger();
+		Comment("Countdown Timer");
+	}
+}
+Trigger {
+	players = {Force1,Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		MoveLocation("City Processor","Terran Beacon",P9,"Anywhere");
+		PreserveTrigger();
+		Comment("Tax Trigger Move Location");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by CPU");
+	}
+}
+Trigger {
+	players = {Force1},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Player");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Allied Computer");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		Bring(Force1,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Nobody");
+	}
+}
+Trigger {
+	players = {Force1,Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		MoveLocation("City Processor","Terran Beacon",P9,"Anywhere");
+		PreserveTrigger();
+		Comment("Tax Trigger Move Location");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by CPU");
+	}
+}
+Trigger {
+	players = {Force1},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Player");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Allied Computer");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		Bring(Force1,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Nobody");
+	}
+}
+Trigger {
+	players = {Force1,Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		MoveLocation("City Processor","Terran Beacon",P9,"Anywhere");
+		PreserveTrigger();
+		Comment("Tax Trigger Move Location");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by CPU");
+	}
+}
+Trigger {
+	players = {Force1},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Player");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Allied Computer");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		Bring(Force1,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Nobody");
+	}
+}
+Trigger {
+	players = {Force1,Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		MoveLocation("City Processor","Terran Beacon",P9,"Anywhere");
+		PreserveTrigger();
+		Comment("Tax Trigger Move Location");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by CPU");
+	}
+}
+Trigger {
+	players = {Force1},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Player");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Allied Computer");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		Bring(Force1,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Nobody");
+	}
+}
+Trigger {
+	players = {Force1,Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		MoveLocation("City Processor","Terran Beacon",P9,"Anywhere");
+		PreserveTrigger();
+		Comment("Tax Trigger Move Location");
+	}
+}
+Trigger {
+	players = {Force2},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by CPU");
+	}
+}
+Trigger {
+	players = {Force1},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Player");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Buildings","City Processor");
+		Bring(P9,AtLeast,1,"Terran Beacon","City Processor");
+		Bring(Force2,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",CurrentPlayer);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Allied Computer");
+	}
+}
+Trigger {
+	players = {Force3},
+	conditions = {
+		Bring(P9,AtLeast,1,"Terran Beacon","Anywhere");
+		Bring(Force1,Exactly,0,"Buildings","City Processor");
+		Bring(Force3,Exactly,0,"Buildings","City Processor");
+		CountdownTimer(AtLeast,31);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",P9,"City Processor",P8);
+		PreserveTrigger();
+		Comment("Tax Trigger Owned by Nobody");
+	}
+}
+Trigger {
+	players = {Force1,Force2,Force3},
+	conditions = {
+		Bring(CurrentPlayer,AtLeast,1,"Terran Beacon","Anywhere");
+		CountdownTimer(AtMost,30);
+	},
+	actions = {
+		GiveUnits(1,"Terran Beacon",CurrentPlayer,"Anywhere",P9);
+		SetDeaths(CurrentPlayer,Add,500,"Vespene Tank (Terran Type 1)");
+		PreserveTrigger();
+		Comment("Give Beacon to Neutral");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,65536,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,65536,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,65536,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,32768,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,32768,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,32768,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,16384,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,16384,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,16384,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,8192,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,8192,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,8192,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,4096,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,4096,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,4096,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,2048,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,2048,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,2048,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,1024,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,1024,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,1024,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,512,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,512,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,512,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,256,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,256,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,256,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,128,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,128,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,128,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,64,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,64,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,64,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,32,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,32,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,32,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,16,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,16,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,16,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,8,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,8,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,8,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,4,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,4,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,4,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,2,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,2,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,2,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
+Trigger {
+	players = {Force1,Force2},
+	conditions = {
+		Deaths(CurrentPlayer,AtLeast,1,"Vespene Tank (Terran Type 1)");
+	},
+	actions = {
+		SetDeaths(CurrentPlayer,Subtract,1,"Vespene Tank (Terran Type 1)");
+		SetResources(CurrentPlayer,Add,1,Ore);
+		PreserveTrigger();
+		Comment("Binary Tax Conversion");
+	}
+}
