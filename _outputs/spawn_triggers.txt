@@ -1,0 +1,320 @@
+Trigger {
+	players = {P8},
+	conditions = {
+		Always();
+	},
+	actions = {
+		SetSwitch("Switch 245",Random);
+		SetSwitch("Switch 244",Random);
+		SetSwitch("Switch 243",Random);
+		SetSwitch("Switch 242",Random);
+		SetSwitch("Switch 241",Random);
+		SetSwitch("Switch 240",Random);
+		SetSwitch("Switch 239",Random);
+		SetSwitch("Switch 238",Random);
+		PreserveTrigger();
+		SetDeaths(P8,SetTo,0,"Vespene Sac (Zerg Type 1)");
+		Comment("[Comment] Randomize Spawn moves");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 245",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,1,"Vespene Sac (Zerg Type 2)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 244",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,2,"Vespene Sac (Zerg Type 2)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 243",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,4,"Vespene Sac (Zerg Type 2)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 242",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,8,"Vespene Sac (Zerg Type 2)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 241",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,16,"Vespene Sac (Zerg Type 2)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 240",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,32,"Vespene Sac (Zerg Type 2)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 239",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,64,"Vespene Sac (Zerg Type 2)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 238",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,128,"Vespene Sac (Zerg Type 2)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Always();
+	},
+	actions = {
+		SetSwitch("Switch 255",Random);
+		SetSwitch("Switch 254",Random);
+		SetSwitch("Switch 253",Random);
+		SetSwitch("Switch 252",Random);
+		SetSwitch("Switch 251",Random);
+		SetSwitch("Switch 250",Random);
+		SetSwitch("Switch 249",Random);
+		SetSwitch("Switch 248",Random);
+		PreserveTrigger();
+		SetDeaths(P8,SetTo,0,"Vespene Sac (Zerg Type 1)");
+		Comment("[Comment] Randomize before spawn");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 255",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,1,"Vespene Sac (Zerg Type 1)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 254",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,2,"Vespene Sac (Zerg Type 1)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 253",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,4,"Vespene Sac (Zerg Type 1)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 252",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,8,"Vespene Sac (Zerg Type 1)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 251",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,16,"Vespene Sac (Zerg Type 1)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 250",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,32,"Vespene Sac (Zerg Type 1)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 249",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,64,"Vespene Sac (Zerg Type 1)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Switch("Switch 248",Set);
+	},
+	actions = {
+		SetDeaths(P8,Add,128,"Vespene Sac (Zerg Type 1)");
+		PreserveTrigger();
+		Comment("[Comment] Randomized Switch -> DC");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Accumulate(P8,AtLeast,500,Ore);
+		Deaths(P8,AtMost,63,"Vespene Sac (Zerg Type 1)");
+	},
+	actions = {
+		SetResources(P8,Subtract,500,Ore);
+		PreserveTrigger();
+		Comment("[Comment] Unit Spawn Trigger");
+		CreateUnit(12,"Jim Raynor (Marine)","Unit Spawn Area",P8);
+		CreateUnit(12,"Sarah Kerrigan (Ghost)","Unit Spawn Area",P8);
+		CreateUnit(12,"Hunter Killer (Hydralisk)","Unit Spawn Area",P8);
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Accumulate(P8,AtLeast,500,Ore);
+		Deaths(P8,AtLeast,64,"Vespene Sac (Zerg Type 1)");
+		Deaths(P8,AtMost,127,"Vespene Sac (Zerg Type 1)");
+	},
+	actions = {
+		SetResources(P8,Subtract,500,Ore);
+		PreserveTrigger();
+		Comment("[Comment] Unit Spawn Trigger");
+		CreateUnit(18,"Hunter Killer (Hydralisk)","Unit Spawn Area",P8);
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Accumulate(P8,AtLeast,500,Ore);
+		Deaths(P8,AtLeast,128,"Vespene Sac (Zerg Type 1)");
+		Deaths(P8,AtMost,191,"Vespene Sac (Zerg Type 1)");
+	},
+	actions = {
+		SetResources(P8,Subtract,500,Ore);
+		PreserveTrigger();
+		Comment("[Comment] Unit Spawn Trigger");
+		CreateUnit(24,"Terran Wraith","Unit Spawn Area",P8);
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Accumulate(P8,AtLeast,500,Ore);
+		Deaths(P8,AtLeast,192,"Vespene Sac (Zerg Type 1)");
+	},
+	actions = {
+		SetResources(P8,Subtract,500,Ore);
+		PreserveTrigger();
+		Comment("[Comment] Unit Spawn Trigger");
+		CreateUnit(12,"Norad II (Battlecruiser)","Unit Spawn Area",P8);
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Bring(AllPlayers,AtLeast,1,"Men","Unit Spawn Area");
+		Deaths(P8,AtMost,63,"Vespene Sac (Zerg Type 1)");
+	},
+	actions = {
+		MoveUnit(100,"Men",AllPlayers,"Unit Spawn Area","Junggangjin");
+		PreserveTrigger();
+		Comment("[Comment] Unit Move Trigger");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Bring(AllPlayers,AtLeast,1,"Men","Unit Spawn Area");
+		Deaths(P8,AtLeast,64,"Vespene Sac (Zerg Type 1)");
+		Deaths(P8,AtMost,127,"Vespene Sac (Zerg Type 1)");
+	},
+	actions = {
+		MoveUnit(100,"Men",AllPlayers,"Unit Spawn Area","Chaoyang");
+		PreserveTrigger();
+		Comment("[Comment] Unit Move Trigger");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Bring(AllPlayers,AtLeast,1,"Men","Unit Spawn Area");
+		Deaths(P8,AtLeast,128,"Vespene Sac (Zerg Type 1)");
+		Deaths(P8,AtMost,191,"Vespene Sac (Zerg Type 1)");
+	},
+	actions = {
+		MoveUnit(100,"Men",AllPlayers,"Unit Spawn Area","Cheongjin");
+		PreserveTrigger();
+		Comment("[Comment] Unit Move Trigger");
+	}
+}
+Trigger {
+	players = {P8},
+	conditions = {
+		Bring(AllPlayers,AtLeast,1,"Men","Unit Spawn Area");
+		Deaths(P8,AtLeast,192,"Vespene Sac (Zerg Type 1)");
+	},
+	actions = {
+		MoveUnit(100,"Men",AllPlayers,"Unit Spawn Area","Jilin");
+		PreserveTrigger();
+		Comment("[Comment] Unit Move Trigger");
+	}
+}

@@ -11,7 +11,7 @@ class BaseTriggerGenerator:
 
     @classmethod
     def clear_all_output_file(cls):
-        with open(config.output_dir / "_all_triggers", "w") as f:
+        with open(config.output_dir / "_all_triggers.txt", "w") as f:
             f.close()
 
     @classmethod
@@ -24,5 +24,5 @@ class BaseTriggerGenerator:
         with open(config.output_dir / cls.OUTPUT_FILE, "a") as f:
             f.write(content)
 
-        with open(config.output_dir / "_all_triggers", "a") as f:
+        with open(config.output_dir / "_all_triggers.txt", "a") as f:
             f.write(content)

@@ -2,10 +2,11 @@ from base import BaseTriggerGenerator
 from btik_triggers.hyper_triggers import HyperTriggerGenerator
 from btik_triggers.lane_order_control import LaneOrderControlGenerator
 from btik_triggers.tax_triggers import TaxTriggerGenerator
-
+from btik_triggers.unit_spawn_control import UnitSpawnGenerator
 
 BaseTriggerGenerator.clear_all_output_file()
 
 TaxTriggerGenerator.generate_triggers()
 LaneOrderControlGenerator.generate_triggers()
 HyperTriggerGenerator.generate_triggers()
+UnitSpawnGenerator.generate_triggers()

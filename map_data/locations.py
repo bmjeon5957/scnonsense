@@ -40,6 +40,7 @@ class Locations(QuotedEnum):
     XIHU = "Xihu"
     ANSHAN = "Anshan"
     CITY_PROCESSOR = "City Processor"
+    UNIT_SPAWN_AREA = "Unit Spawn Area"
 
 
 class LaneLocations(QuotedEnum):
